@@ -3,18 +3,18 @@ pragma solidity ^0.8.0;
 
 contract SampleContract {
 
-	string state;
+	string value; // State variable
 
 	constructor() public {
-		state = "Initial";
+		value = "Initial"; 
 	}
 
-	function getState() public view returns(string memory) {
-		return state;
+	function getValue() public view returns(string memory) {
+		return value;
 	}
 
-	function setState(string memory _state) public {
-		state = _state;
+	function setValue(string memory newValue) public {
+		value = newValue;
 	}
 
 }
